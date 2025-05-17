@@ -30,7 +30,8 @@ static const unsigned Rh2[4] = {17, 29, 37, 43};
 static const unsigned Rv[4]  = {32, 59, 22, 19};
 static const unsigned Rv2[4] = {41, 05, 58, 07};
 
-// derived with siphash-4-8 on the given strings, big-endian, key "therocks"
+// derived with siphash-4-8 on the given strings, little-endian, key "therocks"
+// see genconstants.py for info
 static const uint64_t RC[ROUNDS] = {
     // "hey reader! pbl here (the person that made this)"
     0xB72EFDD79263528BULL,
